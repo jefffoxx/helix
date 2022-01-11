@@ -55,9 +55,21 @@ body {
 .grid-3 {
     width: 98%;
     margin-left: 1%;
-    gap: 10px 20px;
 }
 
 .grid-3>div {
     display: flex;
+    gap: 10px 20px;
+
+}
+
+.grid-3 picture {
+    overflow: hidden;
+    height: 220px;
+    display: inline-block;
+
+}
+
+.grid-3>div div img {
+    max-width: 100%;
 }
