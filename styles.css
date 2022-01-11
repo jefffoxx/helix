@@ -13,23 +13,26 @@ body {
 }
 
 .hero > div > div {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     align-items: center;
-    align-content: flex-end;
-    height: 100vh;
-    max-width: 600px;
-    padding: 0 0 48px 0;
+    height: auto;
+    width: 100%;
+    padding: 200px 0 48px 0;
+}
+.hero h1 {
+    font-size: 8rem;
+}
+
+.hero h2 {
+    font-size: 4rem;
 }
 
 .hero h1, h2 {
     z-index: 2;
-    position: relative;
-    background: #FFF;
+    color: white;
     padding: 6px 24px;
     margin: 0;
-    flex: 1 1 auto;
+    position: relative;
+    text-align: center;
 }
 
 .hero picture {
@@ -39,10 +42,22 @@ body {
     right: 0;
     top: 0;
     bottom: 0;
+    background: black;
 }
 
 .hero img {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    opacity: 50%;
+}
+
+.grid-3 {
+    width: 98%;
+    margin-left: 1%;
+    gap: 10px 20px;
+}
+
+.grid-3>div {
+    display: flex;
 }
